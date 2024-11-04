@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Numbers</h2>
+
+
+
+<p>Enter two numbers to see their sum:</p>
+
+
+
+<input type="number" id="num1" placeholder="Enter first number">
+
+<input type="number" id="num2" placeholder="Enter second number">
+
+<button onclick="calculateSum()">Calculate Sum</button>
+
+
+<p id="demo"></p>
+
+<script>
+
+function calculateSum() {
+   
+
+ let x = parseFloat(document.getElementById("num1").value);
+ 
+ let y = parseFloat(document.getElementById("num2").value);
+   
+ let sum = x + y;
+   
+ document.getElementById("demo").innerHTML = "The sum is: " + sum;
+ window.alert();
+
+}
+
+ </script>
+
+</body>
+</html>
